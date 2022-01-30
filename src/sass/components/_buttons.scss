@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+.button {
+	padding-left: 2em;
+	padding-right: 10em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	background: $dark-blue;
+	color: $white;
+	border: 1px solid $light-grey;
+
+	&::before {
+		content: attr(data-number);
+		color: $light-grey;
+		padding-right: 2em;
+	}
+
+	&:hover {
+		background: $dark-grey;
+		border: 1px solid $dark-grey;
+	}
+
+	&:active {
+		background: $light-blue;
+		border: 1px solid $light-blue;
+	}
+}
