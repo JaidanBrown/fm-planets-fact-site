@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+header {
+	width: 100%;
+	border-bottom: 1px solid rgba($color: $white, $alpha: 0.2);
+
+	.header-inner {
+		width: 95%;
+		margin: 0 auto;
+		height: 85px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.header-right {
+		ul {
+			display: flex;
+			color: rgba($color: $white, $alpha: 0.75);
+
+			li {
+				padding-left: 2em;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
